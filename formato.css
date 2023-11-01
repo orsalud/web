@@ -3,24 +3,22 @@
   --colorTablas: rgb(93, 15, 89);
   --colorPie: #333;
   --colorCuerpo: #f0f0f0;
-  --colorLinks: rgb(13, 106, 199);
+  --colorLinks: rgb(58, 146, 234);
   --colorFormularios: #8f0788;
-  --background-color-light: #ffffff;  /* Color de fondo en modo claro */
-  --text-color-light: #000000;        /* Color de texto en modo claro */
-  --background-color-dark: #000000;   /* Color de fondo en modo noche */
-  --text-color-dark: #ffffff; 
+  --colorModoOscuro: rgb(87, 87, 87);
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(87, 87, 87);
+    background-color: var(--colorModoOscuro);
     color: var(--colorCuerpo);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  a {
-    color: rgb(166, 255, 0);
+  form {
+    
+    color: var(--colorCuerpo);
   }
 }
 
@@ -111,8 +109,7 @@ table {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--colorCuerpo);
-    border: 1px solid var(--colorCuerpo);
+    border: 2px solid var(--colorORSalud);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
