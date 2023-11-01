@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <META charset="utf-8">
+        <title>Buscador - OR Salud </title>
+        <link rel="stylesheet" href="formato.css" type="text/css">
+    </head>
+    <body>
+        <header>
+        <h1>OR Salud</h1>
+        <figure>
+            <img src="imagenes/logo1.png" alt='Logo OR Salud'>
+        </figure>
+        
+        <nav class="letras_header">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscador.html">Buscador</a></li>
+            <li><a href="formulario_participacion.html">Participación</a></li>
+            <li><a href="formulario_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <p>Estás en: <a href="./index.html">Inicio</a> → <a href="./buscador.html">Buscador</a></p>
+
+    <h1>Enciclopedia de Salud</h1>
+    <main>
+        <form id="search-form" action="buscador_respuesta.html">
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <input type="text" id="descripcion" name="descripcion" placeholder="Ej: Enfermedad crónica">
+                <select id="opcion_descripcion" name="opcion_descripcion">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                </select>
+            </div>
+            <div>
+                <label for="causas">Causas:</label>
+                <input type="text" id="causas" name="causas" placeholder="Ej: Traumatismo">
+                <select id="opcion_causas" name="opcion_causas">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sintomas">Síntomas:</label>
+                <input type="text" id="sintomas" name="sintomas" placeholder="Ej: Dolor de cabeza">
+
+                <select id="opcion_sintomas" name="opcion_sintomas">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                </select>
+            </div>
+            <div>
+                <label for="pruebas">Pruebas y exámenes:</label>
+                <input type="text" id="pruebas" name="pruebas" placeholder="Ej: Radiografia">
+                <select id="opcion_pruebas" name="opcion_pruebas">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="tratamiento">Tratamiento:</label>
+                <input type="text" id="tratamiento" name="tratamiento" placeholder="Ej: Beber mucha agua">
+                <select id="opcion_tratamiento" name="opcion_tratamiento">
+                    <option value="Y">Y</option>
+                    <option value="O">O</option>
+                </select>
+
+
+            </div>
+        <div>
+
+            <label for="expectativas">Expectativas:</label>
+            <input type="text" id="expectativas" name="expectativas" placeholder="Ej: Mejora en dos semanas">
+            <select id="opcion_expectativas" name="opcion_expectativas">
+                <option value="Y">Y</option>
+                <option value="O">O</option>
+            </select>
+
+        </div>
+
+        
+            <input type="submit" value="Buscar 🔍">
+            <input type="reset" id="vaciar_campos" name="vaciar campos" value="Reiniciar">
+        </form>
+    </main>
+    
+    <footer> <!--pie de página para todos los html-->
+        <p>&copy; 2023 OR Salud</p>
+        <p>Propiedad de María Reyes Obregón y Manuel Rubio</p>
+    </footer>
+    <!-- Aquí mostrarás los resultados de la búsqueda -->
+
+</body>
+</html>

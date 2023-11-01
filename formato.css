@@ -1,0 +1,305 @@
+:root{
+  --colorORSalud: rgba(81,32,68,255);
+  --colorTablas: rgb(93, 15, 89);
+  --colorPie: #333;
+  --colorCuerpo: #f0f0f0;
+  --colorLinks: rgb(13, 106, 199);
+  --colorFormularios: #8f0788;
+  --background-color-light: #ffffff;  /* Color de fondo en modo claro */
+  --text-color-light: #000000;        /* Color de texto en modo claro */
+  --background-color-dark: #000000;   /* Color de fondo en modo noche */
+  --text-color-dark: #ffffff; 
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(87, 87, 87);
+    color: var(--colorCuerpo);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: rgb(166, 255, 0);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10;
+}
+
+header {
+  background-color: var(--colorORSalud);
+  color: var(--colorCuerpo);
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+    text-align:left;
+    padding: 20px;
+    background-color: inherit;
+    display: inline;
+}
+
+footer {
+  background-color: var(--colorPie);
+  color: var(--colorCuerpo);
+  text-align: center;
+  padding: 10px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  color:inherit;
+  text-align: inherit;
+}
+
+li {
+  margin-right: 20px;
+  list-style-type: disc;
+  
+}
+
+.letras_header li {
+  text-align-last: center;
+  display: inline;
+}
+
+.centrar img{
+  margin: 0 auto; /* Configura los márgenes izquierdo y derecho para centrar */
+  display: block; /* Hace que la imagen sea un bloque para que los márgenes automáticos funcionen */
+}
+
+a{
+  color: var(--colorLinks);
+}
+
+
+table {
+    width: 80%; 
+    margin: 0 auto; 
+    border-collapse: collapse;
+    border: 3px solid var(--colorTablas);
+}
+  th, td {
+    padding: 10px; 
+    text-align: center; 
+    border: 2px solid var(--colorTablas); 
+  }
+  th {
+    background-color: var(--colorTablas);
+    color: var(--colorCuerpo); 
+  }
+  caption {
+    font-weight: bold; 
+    margin-bottom: 10px; 
+  }
+  tbody tr:nth-child(even) td {
+    border-bottom: 2px solid var(--colorTablas); 
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--colorCuerpo);
+    border: 1px solid var(--colorCuerpo);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  label {
+    display: inline;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  /* Estilo para el botón de envío */
+input[type="submit"], input[type="reset"] {
+  background-color: var(--colorORSalud);
+  color: var(--colorCuerpo);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cambiar el estilo del botón cuando se coloca el mouse sobre él */
+input[type="submit"]:hover, input[type="reset"]:hover, button[type="submit"]:hover{
+  background-color: var(--colorFormularios);
+}
+
+form:focus-within {
+  background:#8f078845;
+}
+
+button {
+  background-color: var(--colorORSalud);
+  color: var(--colorCuerpo);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icon-correo::before {
+  content: "email"; 
+  font-family: 'Material Icons'; 
+  color: var(--colorFormularios);
+  font-size : 24px;
+  vertical-align: middle;
+}
+.icon-correo {
+  text-decoration: none;
+}
+.icon-fecha-nacimiento::before {
+  content: "event"; 
+  font-family: 'Material Icons'; 
+  color: var(--colorFormularios); 
+  font-size: 24px; 
+  vertical-align: middle; 
+}
+.icon-genero-masculino::before {
+  content: "person";
+  font-family: 'Material Icons';
+  color: blue;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.icon-genero-femenino::before {
+  content: "person";
+  font-family: 'Material Icons';
+  color: pink;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.icon-mas-informacion::before {
+  content: "info";
+  font-family: 'Material Icons';
+  color:var(--colorFormularios);
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.icon-asunto::before {
+  content: "subject";
+  font-family: 'Material Icons';
+  color: var(--colorFormularios);
+  font-size: 24px;
+  vertical-align: middle;
+}
+.icon-formacion-academica::before {
+  content: "school";
+  font-family: 'Material Icons';
+  color:var(--colorFormularios);
+  font-size: 24px;
+  vertical-align: middle;
+}
+.icon-dni::before {
+  content: "credit_card";
+  font-family: 'Material Icons';
+  color:var(--colorFormularios);
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.icon-puntuacion::before {
+  content: "star";
+  font-family: 'Material Icons';
+  color:var(--colorFormularios);
+  font-size: 24px; 
+  vertical-align: middle; 
+}
+
+/* Estilos para dispositivos de baja resolución */
+@media (max-width: 480px) {
+  /* Cambiar el tamaño y espaciado del texto para que sea legible en pantallas pequeñas */
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Modificar el diseño de la barra de navegación para un menú desplegable */
+  .menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block; /* Mostrar un botón de menú para activar el menú desplegable */
+  }
+
+  /* Cambiar el diseño de las imágenes o elementos para que se ajusten al ancho de la pantalla */
+  .responsive-image {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+}
+
+@media (min-width: 1920px) {
+ 
+  body {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+ 
+  .menu {
+    display: block;
+  }
+
+  .menu-button {
+    display: none; 
+  }
+
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block; 
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 90%; 
+    margin: 10px auto; 
+  }
+
+}
+
+

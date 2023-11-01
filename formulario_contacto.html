@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <META charset="utf-8">
+        <title>Formulario de Contacto - OR Salud</title>
+        <link rel="stylesheet" href="formato.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+    <body>
+        <header>
+        <h1>OR Salud</h1>
+        <figure>
+            <img src="imagenes/logo1.png" alt='Logo OR Salud'>
+        </figure>
+        
+        <nav class="letras_header">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="buscador.html">Buscador</a></li>
+            <li><a href="formulario_participacion.html">Participación</a></li>
+            <li><a href="formulario_contacto.html">Contacto</a></li>
+            </ul>
+            </nav>
+        
+        </header>
+        <p>Estás en: <a href="./index.html">Inicio</a> → <a href="./formulario_contacto.html">Formulario de Contacto</a></p>
+
+        <h1>Formulario de Contacto</h1>
+
+        <p><b>Los campos con * son obligatorios</b></p>
+        <main>
+            <form action="formulario_contacto_respuesta.html">
+                <div>
+                    <label for="asunto">Asunto*:</label>
+                    <input type="text" id="asunto" name="asunto"  placeholder="Escribir asunto" required>
+                    <span class="icon-asunto"></span>
+
+                </div>
+                <div>
+                    <label for="comentario">Comentario o pregunta*:</label>
+                    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribir comentario" required></textarea>
+                    <span class="icon-asunto"></span>
+                </div>
+                <div>
+                    <label for="yoSoy">Yo soy:</label>
+                    <select id="yoSoy" name="yoSoy">
+                        <option value="Paciente">Paciente</option>
+                        <option value="Científico">Científico</option>
+                        <option value="Médico">Médico</option>
+                        <option value="Educador">Educador</option>
+                        <option value="Fabricante">Fabricante</option>
+                        <option value="Periodista">Periodista</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    <span class="icon-fecha-nacimiento"></span>
+
+                </div>
+                <div>
+                    <label>Género:</label>
+                    <input type="radio" id="hombre" name="genero" value="Hombre">
+                    <span class="icon-genero-masculino"></span>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="genero" value="Mujer">
+                    <span class="icon-genero-femenino"></span>
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="otro" name="genero" value="Otro">
+                    <label for="otro">Otro</label>
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="xxxxxxxx@orsalud.es">
+                    <a href="mailto:correo@example.com" class="icon-correo"></a>
+
+                </div>
+                <div>
+                    <input type="checkbox" id="deseoInformacion" name="deseoInformacion">
+                    <label for="deseoInformacion">Deseo recibir más información</label>
+                    <span class="icon-mas-informacion"></span>
+
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" id="vaciar_campos" name="vaciar campos" value="Reiniciar">
+                </div>
+            </form>
+        </main>
+
+        <footer> <!--pie de página para todos los html-->
+            <p>&copy; 2023 OR Salud</p>
+            <p>Propiedad de María Reyes Obregón y Manuel Rubio</p>
+        </footer>
+    </body>
+    
+</html>
