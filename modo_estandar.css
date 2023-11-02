@@ -1,0 +1,10 @@
+:root{
+    --colorORSalud: rgba(81,32,68,255);
+    --colorTablas: rgb(93, 15, 89);
+    --colorPie: #333;
+    --colorTexto: black;
+    --colorFijo: #f0f0f0;
+    --colorCuerpo: white;
+    --colorLinks: rgb(13, 106, 199);
+    --colorFormularios: #8f0788;
+  }

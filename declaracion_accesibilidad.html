@@ -4,8 +4,14 @@
         <META charset="utf-8">
         <title>Declaración de Accesibilidad - OR Salud</title>
         <link rel="stylesheet" href="formato.css" type="text/css">
+        <link rel="stylesheet" href="modo_estandar.css" type="text/css" title="Estilo principal">
+        <link rel="alternate stylesheet" href="modo_noche.css" type="text/css" title="Modo Noche">
+        <link rel="alternate stylesheet" href="modo_contraste.css" type="text/css" title="Modo Alto Contraste">
+        <link rel="alternate stylesheet" href="modo_letragrande.css" type="text/css" title="Modo Letra Grande">
+        <link rel="alternate stylesheet" href="modo_grandecontraste.css" type="text/css" title="Letra Grande & Alto Contraste">
     </head>
     <body>
+        <a class="skip-link" href="#main-content">Saltar al contenido</a>
         <header>
         <h1>OR Salud</h1>
         <figure>
@@ -27,10 +33,10 @@
             <ol>
                 <li><a href="#compromiso">Nuestro Compromiso</a></li>
                 <li><a href="#politica">Política de Accesibilidad</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
             </ol>
         </nav>
-        <main>
+        <main id="main-content">
             <section id="compromiso">
                 <h2>Nuestro Compromiso con la Accesibilidad</h2>
                 <p>En OR Salud, estamos comprometidos a proporcionar un sitio web accesible a todos nuestros usuarios. Creemos que cada persona, independientemente de su capacidad, tiene derecho a acceder a la información y los servicios en línea de manera equitativa.</p>
@@ -41,14 +47,32 @@
                 <p>Nuestro sitio web se adhiere a las pautas de accesibilidad WCAG 2.1 (Nivel AA). Hacemos esfuerzos constantes para garantizar que nuestro sitio sea fácilmente utilizable por personas con discapacidades, incluyendo aquellas que utilizan tecnologías de asistencia.</p>
             </section>
         
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>Si tienes alguna pregunta o comentario sobre la accesibilidad de nuestro sitio web, por favor contáctanos. Estamos aquí para ayudarte y mejorar constantemente la experiencia de nuestros usuarios.</p>
-                <p>Puedes comunicarte con nosotros a través de:</p>
+            <section id="caracteristicas">
+                <h2>Características</h2>
                 <ul>
-                    <li><a href="formulario_contacto.html">Formulario de Contacto</a></li>
-                    <li>Correo electrónico: <a href="mailto:contacto@orsalud.com">contacto@orsalud.comm</a></li>
+                    <li><strong>Abreviaturas</strong>: Se ha utilizado en el index.html refiriéndose a la OMS con abbr.</li>
+                    <li><strong>Enacabezdos</strong>: Todas las páginas cuentan con encabezados de varios niveles. h1, h2…. De forma ordenada, utilizando h1 para el título del sitio web y h2 para el título </li>
+                    <li><strong>Enlaces:</strong> Los enlaces los podemos encontrar en la cabecera de todas las páginas, que redirigen a otras propias. Además, en el pie de página de los artículos tenemos artículos de interés que llevan a otras páginas externas. Todo ello sintetizando al máximo evitando duplicados de enlaces.</li>
+                    <li><strong>Formularios:</strong> Todos nuestros formularios contienen * en los campos obligatorio y utilizamos label</li>
+                    <li><strong>Etiquetado semántico:</strong> Se ha utilizado strong en todos los artículos para destacar las letras en negrita </li>
+                    <li><strong>Idioma: </strong>Todas las páginas tienen identificado el idioma principal con Lang=”es”. </li>
+                    <li><strong>Imágenes: </strong>Todas las imágenes tienen el atributo alt con un texto alternativo adecuado. </li>
+                    <li><strong>Migas de pan:</strong> En todas las páginas se ha incluido una descripción del camino que se ha seguido hasta llegar a esa página. Por ejemplo, en la página “asma.html” nos aparece
+                        Estas en: Inicio → Índice letra A→ Asma</li>
+                    <li><strong>Texto justificado:</strong> Hemos evitado justificar el texto para que no se creen espacios en blanco que dificulten la lectura</li>
+                    <li><strong>Anchura del texto: </strong>Aseguré que el texto no tenga una anchura excesiva y que sea legible en pantallas más pequeñas.</li>
+                    <li><strong>Contraste:</strong>Hemos garantizado un buen contraste entre el texto y el fondo para facilitar la lectura a personas con discapacidad visual. </li>
+                    <li><strong>Alto contraste:</strong>Hemos proporcionado opciones de alto contraste para los usuarios que lo necesiten, como un esquema de colores alternativo. </li>
+                    <li><strong>Tipo de letra: </strong>Hemos utilizado fuentes legibles y escalables, y hemos permitido que los usuarios puedan cambiar el tamaño del texto. </li>
+                    <li><strong>Longitud de texto: </strong>Hemos segmentado el contenido en trozos manejables y hemos proporcionado opciones de navegación para saltar entre secciones largas. </li>
+                    <li><strong>Impresion:  </strong>Hemos configurado una hoja de estilo específica para la impresión que elimina elementos innecesarios y mejora la legibilidad.</li>
+                    <li><strong>Separación entre lineas:</strong> Ajusté el espaciado entre líneas para que el texto sea más legible y evité superposiciones</li>
+                    <li><strong>Separación entre párrafos: </strong>Hemos proporcionado un espacio suficiente entre párrafos para mejorar la estructura y legibilidad del contenido </li>
+                    <li><strong>Tamaño del texto:</strong> Hemos permitido que los usuarios puedan aumentar o disminuir el tamaño del texto según sus preferencias-</li>
+                    <li><strong>Alineación a la izquierda: </strong>Hemos utilizado alineación a la izquierda en lugar de justificada para mejorar la legibilidad en diferentes tamaños de pantalla. </li>
+                    <li><strong>Estilo modo noche: </strong>Hemos proporcionado un modo de alto contraste o modo noche que mejora la legibilidad en condiciones de poca luz. </li>
                 </ul>
+                
             </section>
         </main>
         <footer> <!--pie de página para todos los html-->

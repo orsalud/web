@@ -1,0 +1,71 @@
+/* Establece unidades de medida absolutas */
+body, p, h1, h2, h3, h4, h5, h6 {
+    font-size: 12pt;
+}
+
+/* Cambia los colores a blanco y negro */
+body {
+    color: black;
+    background-color: white;
+}
+
+/* Utiliza un tipo de letra serif para el texto principal */
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Destaca los enlaces */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Muestra el URL de los enlaces con content y attr() */
+a:after {
+    content: " (" attr(href) ")";
+}
+
+/* Elimina elementos no esenciales (por ejemplo, imágenes) */
+img {
+    display: none;
+}
+
+/* Elimina elementos de navegación */
+nav {
+    display: none;
+}
+
+/* Elimina elementos dinámicos generados por JavaScript, Java o Flash */
+script, applet {
+    display: none;
+}
+
+/* Elimina elementos de interacción como formularios */
+form {
+    display: none;
+}
+
+/* Incluye el URL de la página */
+body::after {
+    content: url("https://orsalud.netlify.app/");
+}
+
+/* Incluye un aviso sobre los derechos de uso (copyright) */
+footer::before {
+    content: "© Manuel Rubio y Maria Reyes Obregón, 2023. Todos los derechos reservados.";
+}
+
+/* Reglas específicas para la impresión, como márgenes y saltos de página */
+/* Reglas específicas para la impresión, como márgenes y saltos de página */
+@page {
+    margin: 2cm;
+    size: A4;
+    orphans: 3; /* Evita que se muestren menos de 3 líneas al final de una página */
+    widows: 3; /* Evita que se muestren menos de 3 líneas al principio de una página */
+}
+
+/* Aplica un salto de página antes de los encabezados */
+h1 {
+    page-break-before: never;
+}
+

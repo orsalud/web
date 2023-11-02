@@ -4,10 +4,19 @@
       <META charset="utf-8">
         <title>OR Salud </title>
         <link rel="stylesheet" href="formato.css" type="text/css">
-        
+        <link rel="stylesheet" href="modo_estandar.css" type="text/css" title="Estilo principal">
+        <link rel="alternate stylesheet" href="modo_noche.css" type="text/css" title="Modo Noche">
+        <link rel="alternate stylesheet" href="modo_contraste.css" type="text/css" title="Modo Alto Contraste">
+        <link rel="alternate stylesheet" href="modo_letragrande.css" type="text/css" title="Modo Letra Grande">
+        <link rel="alternate stylesheet" href="modo_grandecontraste.css" type="text/css" title="Letra Grande & Alto Contraste">
+        <link rel="stylesheet" type="text/css" href="print.css" media="print">
+        <link rel="alternate stylesheet" type="text/css" href="print.css" media="screen" title="Estilo para impresión" />
+
+
 
     </head> 
     <body>
+      <a class="skip-link" href="#main-content">Saltar al contenido</a>
       <header>
       <h1>OR Salud</h1>
       <figure>
@@ -28,7 +37,7 @@
       </header>
 
       <p>Estás en: <a href="./index.html">Inicio</a></p>
-      <main>
+      <main id="main-content">
       <p>Descubre una amplia gama de artículos médicos en nuestra plataforma. Nuestros expertos en salud ofrecen información detallada y actualizada sobre enfermedades, diagnósticos, tratamientos y avances médicos. Explora recursos confiables para mantenerte informado y tomar decisiones informadas sobre tu bienestar y salud.</p>
         
         <nav class="letras_header">
@@ -79,7 +88,7 @@
               <li><a href="articulos/embolia_pulmonar.html">Embolia Pulmonar</a></li>
           </ul>
           <table>
-            <caption>Distibución de la población segñun las categorias de la <abbr title="Organización Mundial de la Salud">OMS</abbr> para el Tabaquismo</caption>
+            <caption>Distibución de la población según las categorias de la <abbr title="Organización Mundial de la Salud">OMS</abbr> para el Tabaquismo</caption>
             <!--table row-->
             <thead>
             <tr>
@@ -162,13 +171,14 @@
         </section>
         </aside>
 
-
-          <footer> <!--pie de página para todos los html-->
-            <p><a href="declaracion_accesibilidad.html">Nuestra declaración de Accesibilidad</a></p>
-            <p><a href="mapa_web.html">Mapa del sitio web</a></p>
-            <p>&copy; 2023 OR Salud</p>
-            <p>Propiedad de María Reyes Obregón y Manuel Rubio</p>
-          </footer>
+        
+        <footer> <!--pie de página para todos los html-->
+          <p><a href="declaracion_accesibilidad.html">Nuestra declaración de Accesibilidad</a></p>
+          <p><a href="mapa_web.html">Mapa del sitio web</a></p>
+          <p>&copy; 2023 OR Salud</p>
+          <p>Propiedad de María Reyes Obregón y Manuel Rubio</p>
+        </footer>
+        
     </body>
 
 </html>
