@@ -11,6 +11,12 @@ main {
     padding: 20px;
 }
 
+iframe{
+  
+  border: 3px solid var(--colorTablas);
+  vertical-align: middle;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--colorCuerpo);
@@ -20,6 +26,11 @@ body {
   line-height: 1.5;
 }
 
+#miIframe {
+  width: 80vw; /* Ancho del 100% del viewport width */
+  height: 80vh;
+  
+}
 
 footer {
   width: 100%;
@@ -28,6 +39,7 @@ footer {
   text-align:center;
   padding: 10px;
 }
+
 
 
 nav a {
@@ -271,7 +283,10 @@ button {
   }
 
 
+
 }
+
+
 
 @media (max-width: 480px) {
 
