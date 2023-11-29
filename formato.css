@@ -32,6 +32,10 @@ body {
   
 }
 
+#linksFooter a{
+  color: var(--colorFijo);
+}
+
 footer {
   width: 100%;
   background-color: var(--colorPie);
